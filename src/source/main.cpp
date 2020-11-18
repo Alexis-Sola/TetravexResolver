@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
                 }
                 else if(inter_deux == 3)
                 {
-                    solver_tp(10, 10, data);
+                    solver_tp(4, 4, data);
                 }
                 else
                     break;
