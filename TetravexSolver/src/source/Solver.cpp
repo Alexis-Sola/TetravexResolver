@@ -37,7 +37,7 @@ bool Solver::test_extremities(const unsigned &pos_south, const unsigned &pos_nor
     //Si on est < nb_par_ligne par de contrainte car rien à tester avant
     //Sinon on test S == N
     if((pos_south < nb_par_ligne) || (solved.at(pos_south - nb_par_ligne)->south == ps.at(pos_north).north))
-      return true;
+        return true;
     return false;
 }
 
@@ -45,11 +45,11 @@ bool Solver::solver_recur(const unsigned &pos)
 {
     //Permet d'arrêter la recherche lors de la parallélisation
     if(Solver::found)
-      return true;
+        return true;
 
     //On s'arrête dès que le tableau de solution est plein
     if(pos == ps.size())
-        return true;
+         return true;
 
     //On parcours toutes les pièces dispo
     for(unsigned i = 0; i < ps.size(); i++)
@@ -71,7 +71,7 @@ bool Solver::solver_recur(const unsigned &pos)
             //Appel récursif pour explorer les solutions
             //Si on trouve une solution on s'enfonce plus profondément dans l'exploration
             if(solver_recur(new_pos))
-              return true;
+                return true;
 
             //Sinon on revient en arrière et on enlève la pièce condidate du tableau
             //Et on test d'autre pièce candidate
@@ -81,3 +81,5 @@ bool Solver::solver_recur(const unsigned &pos)
     }
     return false;
 }
+
+

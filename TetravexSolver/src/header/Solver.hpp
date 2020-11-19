@@ -18,10 +18,12 @@ using namespace std;
 class Solver{
 
 private:
+    unsigned cpt = 0;
     Plateau plateau;
     unsigned nb_par_ligne;
     vector<PieceOpti> ps;
     vector<PieceOpti*> solved;
+    bool solution = false;
 
     //Test si le déplacement est posible sur les côtés
     bool test_sides(const unsigned &pos_est, const unsigned &pos_west);

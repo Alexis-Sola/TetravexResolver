@@ -36,8 +36,6 @@ int main(int argc, char *argv[])
                 cin >> inter_deux;
                 if(inter_deux == 1)
                 {
-                    //Matrice issue des données
-                    //Matrix data = readFic(fic_path);
 
                     Plateau pl(data);
 
