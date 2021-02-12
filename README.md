@@ -12,7 +12,7 @@ Source : https://fr.wikipedia.org/wiki/Tetravex
 
 ## Dans le projet
 
-Il y a deux parties ce projet :
+Il y a deux parties qui composent ce projet :
 
  * L'implémentation du puzzle tetravex avec plusieurs grilles à résoudre, il est possible d'y jouer via le terminal
  * L'implémentatation d'un algorithme de backtracking permettant de résoudre le puzzle
