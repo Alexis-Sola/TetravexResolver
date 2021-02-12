@@ -1,4 +1,4 @@
-Projet tetravex :
+# Tetravex
 
 1 - Implémentation du puzzle tetravex avec plusieurs grilles à résoudre
 
